@@ -17,21 +17,21 @@ const Latest = () => {
       url: cardImg1,
       title: "Why you have to digitalize in 2021",
       desc: "  Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur sit amet eros blandit, hendrerit elit et.",
-      aos: "fade-up-right",
+      aos: "flip-left",
     },
     {
       id: 2,
       url: cardImg2,
       title: "Our internal process and longerm vision",
       desc: "  Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur sit amet eros blandit, hendrerit elit et.",
-      aos: "fade-up",
+      aos: "zoom-in-up",
     },
     {
       id: 3,
       url: cardImg3,
       title: "Helping the next generation of leaders",
       desc: "  Lorem ipsum dolor sit amet, consectetur adipiscing elit Curabitur sit amet eros blandit, hendrerit elit et.",
-      aos: "fade-up-left",
+      aos: "fade-up-right",
     },
   ];
   let card = item?.map((el) => (
