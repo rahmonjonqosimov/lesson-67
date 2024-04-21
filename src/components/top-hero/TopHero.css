@@ -1,0 +1,64 @@
+#top__hero {
+  padding: 88px 0 60px;
+}
+.top__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top__hero--text h2 {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #1d3444;
+}
+.top__hero--text {
+  max-width: 618px;
+  width: 100%;
+}
+.top__hero--text p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #5b5b5b;
+  margin: 24px 0 32px;
+}
+.top__hero--text button {
+  padding: 18px 32px;
+  border-radius: 27px;
+  border: none;
+  background: #f58a07;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.04px;
+  text-align: left;
+  cursor: pointer;
+}
+.top {
+  max-width: 620px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.left__div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #e78105;
+  width: 30%;
+  height: 100%;
+  opacity: 0.7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.top:hover .left__div {
+  transform: scaleX(1);
+}

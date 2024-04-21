@@ -1,0 +1,126 @@
+#footer {
+  padding: 80px 0;
+  background: #063255;
+  color: #fff;
+}
+.footer {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.footer .left {
+  max-width: 350px;
+}
+.footer .left .icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.footer .left .icons svg {
+  color: #fff;
+  font-size: 20px;
+}
+.footer .left h3 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 32px 0;
+}
+.footer__links {
+  list-style: none;
+  color: #fff;
+}
+.footer__links li {
+  margin-bottom: 16px;
+}
+.footer__links h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+.footer__links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+.footer__links li a:hover {
+  opacity: 0.5;
+}
+.footer form h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+.footer form input {
+  padding: 18px 32px;
+  border: none;
+  outline: none;
+  border-radius: 31px;
+  max-width: 342px;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+::placeholder {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #9c9c9c;
+}
+.footer form button {
+  padding: 17px 32px;
+  border-radius: 31px;
+  background: #f58a07;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19.17px;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.bottom h5 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+.bottom__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bottom a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.bottom a:hover {
+  opacity: 0.5;
+}

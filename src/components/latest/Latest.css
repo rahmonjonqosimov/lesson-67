@@ -1,0 +1,68 @@
+#latest {
+  padding: 96px 0;
+  background: #dceaf5;
+}
+#latest h2 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 64px;
+  color: #0d1317;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.wrapper .card {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.wrapper .card img {
+  width: 100%;
+}
+.wrapper .card .text {
+  padding: 32px;
+  background: #fff;
+}
+.wrapper .card .text h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #0d1317;
+}
+.wrapper .card .text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #5b5b5b;
+  margin: 16px 0 24px;
+}
+.wrapper .card .text button {
+  border: none;
+  background: transparent;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.04px;
+  text-align: left;
+  color: #f58a07;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.wrapper .card:hover {
+  box-shadow: 4px 4px 10px #0002;
+}
