@@ -14,7 +14,7 @@ const BlogHero = () => {
     <section id="blog__hero">
       <div className="container">
         <div className="blog__hero">
-          <div className="blog__hero--text">
+          <div data-aos="zoom-out-right" className="blog__hero--text">
             <div className="user">
               <img src={user} alt="User" />
               <span>Andrew Jonson</span>
@@ -30,9 +30,9 @@ const BlogHero = () => {
               Read More <HiArrowLongRight />
             </button>
           </div>
-          <div className="top">
+          <div data-aos="zoom-out-left" className="top">
             <div className="left__div"></div>
-            <img data-aos="flip-down" src={img} alt="" />
+            <img className="img" src={img} alt="" />
           </div>
         </div>
       </div>

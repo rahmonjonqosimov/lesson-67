@@ -124,3 +124,16 @@
 .bottom a:hover {
   opacity: 0.5;
 }
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .left h3 {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+}

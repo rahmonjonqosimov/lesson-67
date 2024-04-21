@@ -53,3 +53,36 @@
 button:active {
   transform: scale(0.95);
 }
+.menu {
+  display: none;
+}
+.menu--none {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header .links {
+    position: fixed;
+    top: 63.4px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    right: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+    background: #fff;
+  }
+  .header .links ul {
+    flex-direction: column;
+  }
+  .links.show {
+    transform: scaleY(1);
+  }
+}
