@@ -9,6 +9,7 @@ const Careers = () => {
         title="We hired people who are very passionate about what they do"
         desc="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw."
         url={img}
+        aos="flip-up"
       />
       <Latest />
     </>

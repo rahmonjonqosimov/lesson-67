@@ -9,6 +9,7 @@ const Service = () => {
         title="We serve clients with ground breaking solutions"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis."
         url={img}
+        aos="flip-right"
       />
       <Latest />
     </>

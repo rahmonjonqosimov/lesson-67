@@ -1,5 +1,12 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./TopHero.css";
-const TopHero = ({ title, desc, url }) => {
+const TopHero = ({ title, desc, url, aos }) => {
+  useEffect(() => {
+    AOS.init({ duration: "800" });
+  }, []);
   return (
     <section id="top__hero">
       <div className="container">
@@ -11,7 +18,7 @@ const TopHero = ({ title, desc, url }) => {
           </div>
           <div className="top">
             <div className="left__div"></div>
-            <img src={url} alt="" />
+            <img data-aos={aos} src={url} alt="" />
           </div>
         </div>
       </div>

@@ -1,9 +1,15 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./BlogHero.css";
 import img from "../../assets/images/blog-img.svg";
 import user from "../../assets/images/blog-user.png";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const BlogHero = () => {
+  useEffect(() => {
+    AOS.init({ duration: "800" });
+  }, []);
   return (
     <section id="blog__hero">
       <div className="container">
@@ -26,7 +32,7 @@ const BlogHero = () => {
           </div>
           <div className="top">
             <div className="left__div"></div>
-            <img src={img} alt="" />
+            <img data-aos="flip-down" src={img} alt="" />
           </div>
         </div>
       </div>

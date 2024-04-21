@@ -9,6 +9,7 @@ const About = () => {
         title="We value human, organizational, and operational intelligence, not just artificial"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis."
         url={img}
+        aos="flip-left"
       />
       <Features />
       <Latest />

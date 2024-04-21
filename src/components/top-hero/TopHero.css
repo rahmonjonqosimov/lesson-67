@@ -58,6 +58,7 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: 0.3s;
+  z-index: 10;
 }
 .top:hover .left__div {
   transform: scaleX(1);

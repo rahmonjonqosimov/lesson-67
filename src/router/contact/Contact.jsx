@@ -1,9 +1,9 @@
-import Latest from "../../components/latest/Latest";
 const Contact = () => {
   return (
     <>
-      <div>Contact</div>
-      <Latest />
+      <div>
+        <h1 style={{ margin: "40px", textAlign: "center" }}>Contact Us</h1>
+      </div>
     </>
   );
 };

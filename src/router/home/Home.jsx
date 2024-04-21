@@ -1,5 +1,6 @@
 import Latest from "../../components/latest/Latest";
 import Hero from "../../components/home/hero/Hero";
+
 const Home = () => {
   return (
     <>
