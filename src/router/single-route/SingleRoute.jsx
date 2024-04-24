@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const SingleRoute = () => {
+  const [url, setUrl] = useState("");
   let { id } = useParams();
   let [product, setProduct] = useState(null);
   useEffect(() => {
@@ -16,35 +17,44 @@ const SingleRoute = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  const searchUrl = (e) => {
+    setUrl(e.target.src);
+  };
   if (!product) {
     return <SingleRouteLoading />;
   }
 
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-    >
-      <section id="single">
-        <div className="single__route--card container">
-          <img src={product.thumbnail} alt="" className="product__image" />
-          <div className="images">
-            <img src={product.images[0]} alt="" />
-            <img src={product.images[1]} alt="" />
-            <img src={product.images[2]} alt="" />
+    <>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      >
+        <section id="single">
+          <div className="single__route--card container">
+            <img
+              src={url || product.thumbnail}
+              alt="Product Imagex "
+              className="product__image"
+            />
+            <div className="images">
+              <img onClick={searchUrl} src={product.images[0]} alt="" />
+              <img onClick={searchUrl} src={product.images[1]} alt="" />
+              <img onClick={searchUrl} src={product.images[2]} alt="" />
+            </div>
+            <h3> {product.title}</h3>
+            <p>{product.description}</p>
+            <span>
+              Price: <h6> ${product.price}</h6>
+            </span>
+            <Link to={`/products`} className="go-back">
+              Go back
+            </Link>
           </div>
-          <h3> {product.title}</h3>
-          <p>{product.description}</p>
-          <span>
-            Price: <h6> ${product.price}</h6>
-          </span>
-          <Link to={`/products`} className="go-back">
-            Go back
-          </Link>
-        </div>
-      </section>
-    </motion.div>
+        </section>
+      </motion.div>
+    </>
   );
 };
 

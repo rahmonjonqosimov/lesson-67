@@ -57,3 +57,117 @@
   padding: 12px 32px;
   margin-top: 20px;
 }
+
+/* Loading... */
+#loading__single {
+  padding: 60px 0;
+}
+.single__route__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single__image {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  background-color: #fef3e6;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.image__wrappaer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.pro-img {
+  width: 100px;
+  height: 100px;
+  background: #fef3e6;
+  border-radius: 8px;
+}
+.pro--title {
+  width: 250px;
+  height: 60px;
+  border-radius: 8px;
+  background: #fef3e6;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.pro--desc {
+  max-width: 1200px;
+  width: 100%;
+  height: 30px;
+  background: #fef3e6;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.pro--btn {
+  width: 130px;
+  height: 50px;
+  background-color: #fef3e6;
+  border-radius: 31px;
+}
+.pro--price {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.pro--price span {
+  width: 100px;
+  height: 40px;
+  background: #fef3e6;
+  border-radius: 8px;
+}
+.pro--price .narx {
+  width: 100px;
+  height: 40px;
+  background: #fef3e6;
+  border-radius: 8px;
+}
+/* RESPONSIVE */
+@media (max-width: 550px) {
+  .product__image {
+    width: 100%;
+    height: auto;
+  }
+  .single__image {
+    height: 300px;
+  }
+  .pro--title {
+    height: 40;
+  }
+  .pro--img {
+    width: 70px;
+    height: 70px;
+  }
+  .single__route--card h3 {
+    font-size: 30px;
+  }
+  .single__route--card p {
+    font-size: 14px;
+  }
+  .single__route--card span {
+    font-size: 20px;
+  }
+  .single__route--card span h6 {
+    font-size: 20px;
+  }
+  .go-back {
+    padding: 8px 24px;
+  }
+}
+@media (max-width: 400px) {
+  .single__route--card .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+  }
+  .single__route--card .images img {
+    height: 70px;
+    width: 70px;
+  }
+}
