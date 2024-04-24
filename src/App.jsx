@@ -13,6 +13,7 @@ import Products from "./router/products/Products";
 import SingleRoute from "./router/single-route/SingleRoute";
 import { Routes, Route } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   let routes = [
@@ -56,7 +57,7 @@ function App() {
     <Route key={el.id} path={el.path} element={el.element} />
   ));
   return (
-    <>
+    <AnimatePresence>
       <Header />
       <Routes>
         {route}
@@ -85,7 +86,7 @@ function App() {
           ".link",
         ]}
       />
-    </>
+    </AnimatePresence>
   );
 }
 

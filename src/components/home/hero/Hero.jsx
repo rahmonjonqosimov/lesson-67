@@ -1,14 +1,20 @@
+import React, { useEffect } from "react";
 import "./Hero.css";
 import logo1 from "../../../assets/images/hero-logo-1.svg";
 import logo2 from "../../../assets/images/hero-logo-2.svg";
 import logo3 from "../../../assets/images/hero-logo-3.svg";
 import heroBG from "../../../assets/images/hero img.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: "800" });
+  }, []);
   return (
     <section id="hero">
       <div className="container">
         <div className="hero">
-          <div className="hero__text">
+          <div data-aos="zoom-in" className="hero__text">
             <h2>Prosper with our bespoke solutions</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -25,7 +31,7 @@ const Hero = () => {
               <img src={logo3} alt="" />
             </div>
           </div>
-          <img className="hero__bg" src={heroBG} alt="" />
+          <img data-aos="zoom-in" className="hero__bg" src={heroBG} alt="" />
         </div>
       </div>
     </section>

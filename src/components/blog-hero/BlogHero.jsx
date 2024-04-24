@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./BlogHero.css";
-import img from "../../assets/images/blog-img.svg";
+import img from "../../assets/images/blog.png";
 import user from "../../assets/images/blog-user.png";
 import { HiArrowLongRight } from "react-icons/hi2";
 
@@ -14,7 +14,7 @@ const BlogHero = () => {
     <section id="blog__hero">
       <div className="container">
         <div className="blog__hero">
-          <div data-aos="zoom-out-right" className="blog__hero--text">
+          <div data-aos="zoom-in" className="blog__hero--text">
             <div className="user">
               <img src={user} alt="User" />
               <span>Andrew Jonson</span>
@@ -30,7 +30,7 @@ const BlogHero = () => {
               Read More <HiArrowLongRight />
             </button>
           </div>
-          <div data-aos="zoom-out-left" className="top">
+          <div data-aos="zoom-in" className="top">
             <div className="left__div"></div>
             <img className="img" src={img} alt="" />
           </div>

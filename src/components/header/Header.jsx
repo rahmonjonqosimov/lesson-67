@@ -16,7 +16,7 @@ const Header = () => {
     <li key={inx}>
       <NavLink
         onClick={() => {
-          scrollTop(), handleSubmit();
+          scrollTop(), setMenu(false);
         }}
         className="nav__link"
         to={`/${el.split(" ").join("").toLowerCase()}`}
@@ -30,7 +30,12 @@ const Header = () => {
     <section id="header">
       <div className="container">
         <div className="header">
-          <Link onClick={scrollTop} to={"/"}>
+          <Link
+            onClick={() => {
+              scrollTop(), setMenu(false);
+            }}
+            to={"/"}
+          >
             <img src={logo} alt="" />
           </Link>
           <div className={menu ? "links show" : "links"}>
