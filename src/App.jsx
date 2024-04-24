@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import About from "./router/about/About";
@@ -8,7 +9,10 @@ import Careers from "./router/careers/Careers";
 import Contact from "./router/contact/Contact";
 import Home from "./router/home/Home";
 import NotFound from "./router/NotFound/NotFound";
+import Products from "./router/products/Products";
+import SingleRoute from "./router/single-route/SingleRoute";
 import { Routes, Route } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   let routes = [
@@ -54,8 +58,33 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>{route}</Routes>
+      <Routes>
+        {route}
+        <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<SingleRoute />} />
+      </Routes>
       <Footer />
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={8}
+        color="245, 138, 7"
+        outerAlpha={0.4}
+        innerScale={0.1}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
     </>
   );
 }

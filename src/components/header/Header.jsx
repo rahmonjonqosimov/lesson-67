@@ -6,10 +6,18 @@ import { CgMenu } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 
 const Header = () => {
-  let item = ["About", "Careers", "Services", "Blog", "Contact us"];
+  let item = ["About", "Careers", "Services", "Blog", "Contact us", "Products"];
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  let [menu, setMenu] = useState(false);
+  const handleSubmit = () => {
+    setMenu(!menu);
+  };
   let links = item?.map((el, inx) => (
     <li key={inx}>
       <NavLink
+        onClick={() => {
+          scrollTop(), handleSubmit();
+        }}
         className="nav__link"
         to={`/${el.split(" ").join("").toLowerCase()}`}
       >
@@ -17,17 +25,12 @@ const Header = () => {
       </NavLink>
     </li>
   ));
-  let [menu, setMenu] = useState(false);
-  const handleSubmit = () => {
-    setMenu(!menu);
-  };
-  console.log(menu);
 
   return (
     <section id="header">
       <div className="container">
         <div className="header">
-          <Link to={"/"}>
+          <Link onClick={scrollTop} to={"/"}>
             <img src={logo} alt="" />
           </Link>
           <div className={menu ? "links show" : "links"}>
