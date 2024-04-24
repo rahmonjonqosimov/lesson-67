@@ -132,7 +132,7 @@
 @media (max-width: 550px) {
   .product__image {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
   .single__image {
     height: 300px;
