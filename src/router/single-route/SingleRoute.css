@@ -72,7 +72,7 @@
   max-width: 500px;
   width: 100%;
   height: 400px;
-  background-color: #fef3e6;
+  background-color: #eef1f4;
   border-radius: 8px;
   margin-bottom: 30px;
 }
@@ -85,14 +85,14 @@
 .pro-img {
   width: 100px;
   height: 100px;
-  background: #fef3e6;
+  background: #eef1f4;
   border-radius: 8px;
 }
 .pro--title {
   width: 250px;
   height: 60px;
   border-radius: 8px;
-  background: #fef3e6;
+  background: #eef1f4;
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -100,14 +100,14 @@
   max-width: 1200px;
   width: 100%;
   height: 30px;
-  background: #fef3e6;
+  background: #eef1f4;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 .pro--btn {
   width: 130px;
   height: 50px;
-  background-color: #fef3e6;
+  background-color: #eef1f4;
   border-radius: 31px;
 }
 .pro--price {
@@ -119,13 +119,13 @@
 .pro--price span {
   width: 100px;
   height: 40px;
-  background: #fef3e6;
+  background: #eef1f4;
   border-radius: 8px;
 }
 .pro--price .narx {
   width: 100px;
   height: 40px;
-  background: #fef3e6;
+  background: #eef1f4;
   border-radius: 8px;
 }
 /* RESPONSIVE */
